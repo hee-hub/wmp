@@ -19,7 +19,7 @@ public class TestProcessor {
 	public String[] process(String url, int divisor, String type) throws IOException {
 		
 		Reader contentReader = urlReader.getReaderFromURL(url);
-		CharactorGroup group = charactorCounter.countCharactor(contentReader);
+		CharactorGroup group = charactorCounter.countCharactor(contentReader, type);
 		int[][] alphabetArr = group.getAlphabetArr();
 		int[] numArr = group.getNumArr();
 		

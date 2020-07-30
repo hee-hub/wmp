@@ -29,7 +29,7 @@ public class CharactorCounterTest {
 		String str = "104dAaaaa32Bbe";
 		Reader reader = new StringReader(str);
 		
-		CharactorGroup group = counter.countCharactor(reader);
+		CharactorGroup group = counter.countCharactor(reader, "includeTag");
 		int[][] alArr = group.getAlphabetArr();
 		int[] numArr = group.getNumArr();
 		for(int i=0;i<2;i++) {
